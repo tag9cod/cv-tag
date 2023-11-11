@@ -1,17 +1,45 @@
 <!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="MobileOptimized" content="320">
+
+        <link rel="stylesheet" type="text/css" href="css/fonts.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="js/plugins/swiper/css/swiper.min.css">
+        <link rel="stylesheet" type="text/css" href="js/plugins/nice_select/nice-select.css">
+        <link rel="stylesheet" type="text/css" href="js/plugins/player/volume.css">
+        <link rel="stylesheet" type="text/css" href="js/plugins/scroll/jquery.mCustomScrollbar.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- Favicon Link -->
+        <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+        <title><%= htmlWebpackPlugin.options.title %></title>
+    </head>
+    <body>
+        <!----Loader Start---->
+        <div class="ms_loader">
+            <div class="wrap">
+                <img src="images/loader.gif" alt="">
+            </div>
+        </div>
+          <!----Main Wrapper Start---->
+        <div id="app"></div>
+        <!-- built files will be auto injected -->
+        <!--Main js file Style-->
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/plugins/swiper/js/swiper.min.js"></script>
+        <script type="text/javascript" src="js/plugins/player/jplayer.playlist.min.js"></script>
+        <script type="text/javascript" src="js/plugins/player/jquery.jplayer.min.js"></script>
+        <script type="text/javascript" src="js/plugins/player/audio-player.js"></script>
+        <script type="text/javascript" src="js/plugins/player/volume.js"></script>
+        <script type="text/javascript" src="js/plugins/nice_select/jquery.nice-select.min.js"></script>
+        <script type="text/javascript" src="js/plugins/scroll/jquery.mCustomScrollbar.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
 </html>
